@@ -107,7 +107,7 @@
                             </li>
                             <li><a href="#" onclick="loadSavedJobs(this)"><i class="fa fa-floppy-o"></i><span>Saved Jobs</span></a>
                             </li>
-                            <li><a href="#"><i class="fa fa-table"></i><span>Categories</span></a>
+                            <li><a href="#"  onclick="loadjobcategory(this)"><i class="fa fa-table"></i><span>Categories</span></a>
                             </li>
                         </ul>
                     </div>
