@@ -251,15 +251,46 @@
 					
 					<table class="table table-hover table-condensed">
 						<thead>
-							<th>
-								<h4>Resume</h4>
+							<th style="font-weight: bold; font-size: 16px;">
+								Resume
 							</th>
-							<th>
-								<h4>Date Added</h4>
+							<th style="font-weight: bold; font-size: 16px;">
+								Date Added
 							</th>
 						</thead>
 						<tbody>
-							
+							<tr>
+								<td>
+									resume.docx
+								</td>
+								<td>
+									Aug 29, 2015
+								</td>
+							</tr>
+							<tr>
+								<td>
+									resume with application letter.docx
+								</td>
+								<td>
+									Jul 4, 2015
+								</td>
+							</tr>
+							<tr>
+								<td>
+									written resume
+								</td>
+								<td>
+									May 13, 2015
+								</td>
+							</tr>
+							<tr>
+								<td>
+									resume(1).pdf
+								</td>
+								<td>
+									Apr 1, 2015
+								</td>
+							</tr>
 						</tbody>
 					</table>
 				</div>
