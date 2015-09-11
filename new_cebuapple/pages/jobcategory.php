@@ -336,12 +336,14 @@
                 <!-- right -->
 
                 <div class="col-lg-4">
-                     <label class="categ-title"> &nbsp; Arts / Media / Design </label>
+                    <div class="jobcateg" id="arts">
+                        <label class="categ-title"> &nbsp; Arts / Media / Design </label>
                             <ul>
                                 <li onclick="check(this)">
                                     <input type="checkbox" id="subcategory32">
                                     <label class="check-label" for="subcategory32"> &nbsp; Interior Design </label>
                                 </li>
+                    </div>
                     <div class="jobcateg" id="agriculture">
                         <label class="check-label"> &nbsp; Agriculture / Veterinary</label>
                             <ul>
@@ -352,7 +354,7 @@
                             </ul>
                     </div>
                     <div class="jobcateg" id="callcenter">
-                        <label class="check-label">  &nbsp; Call Center / BPO </label>
+                        <label class="check-label"> &nbsp; Call Center / BPO </label>
                             <ul>
                                 <li onclick="check(this)">
                                     <input type="checkbox" id="subcategory34">
@@ -361,7 +363,7 @@
                             </ul>
                     </div>
                     <div class="jobcateg" id="engineering">
-                        <label class="check-label">  &nbsp; Engineering / Architecture </label>
+                        <label class="check-label"> &nbsp; Engineering / Architecture </label>
                             <ul>
                                 <li onclick="check(this)">
                                     <input type="checkbox" id="subcategory35">
@@ -412,10 +414,18 @@
                                     <label class="check-label" for="subcategory46"> &nbsp; Virtual / Home-based </label>
                                 </li>
                             </ul>
-                        </div>
-                        <div class="category-background">
-                            <input type="checkbox" id="category12" class="nosub">
-                            <label class="check-label" for="category12" onclick="categorypick(this)">&nbsp; Government / Non-profit</label><ul><li style="cursor:default" class="nosub"></li></ul></div><div class="category-background"><input type="checkbox" id="category15" class="nosub"><label class="check-label" for="category15" onclick="categorypick(this)">&nbsp; HR / Recruitment / Training</label><ul><li style="cursor:default" class="nosub"></li></ul></div><div class="category-background"><input type="checkbox" id="category18" class="nosub"><label class="check-label" for="category18" onclick="categorypick(this)">&nbsp; Legal / Documentation</label><ul><li style="cursor:default" class="nosub"></li></ul></div><div class="category-background"><input type="checkbox" id="category22" class="nosub"><label class="check-label" for="category22" onclick="categorypick(this)">&nbsp; Production / Manufacturing</label><ul><li style="cursor:default" class="nosub"></li></ul></div><div class="category-background"><input type="checkbox" id="category25" class="nosub"><label class="check-label" for="category25" onclick="categorypick(this)">&nbsp; Skilled Work / Technical</label><ul><li style="cursor:default" class="nosub"></li></ul></div></div>
+                    </div>
+                    <div class="jobcateg" id="callcenter">
+                        <label class="check-label"> &nbsp; Government / Non-profit </label>
+                            <ul>
+                                <li onclick="check(this)">
+                                    <input type="checkbox" id="subcategory47">
+                                    <label class="check-label" for="subcategory47"> &nbsp; njghghj </label>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="jobcateg" id="callcenter">
+                        <label class="check-label">&nbsp; HR / Recruitment / Training</label><ul><li style="cursor:default" class="nosub"></li></ul></div><div class="category-background"><input type="checkbox" id="category18" class="nosub"><label class="check-label" for="category18" onclick="categorypick(this)">&nbsp; Legal / Documentation</label><ul><li style="cursor:default" class="nosub"></li></ul></div><div class="category-background"><input type="checkbox" id="category22" class="nosub"><label class="check-label" for="category22" onclick="categorypick(this)">&nbsp; Production / Manufacturing</label><ul><li style="cursor:default" class="nosub"></li></ul></div><div class="category-background"><input type="checkbox" id="category25" class="nosub"><label class="check-label" for="category25" onclick="categorypick(this)">&nbsp; Skilled Work / Technical</label><ul><li style="cursor:default" class="nosub"></li></ul></div></div>
             </div> <!--end of right-->
 
             </div> <!-- End of Container -->
