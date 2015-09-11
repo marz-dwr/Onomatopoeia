@@ -13,4 +13,7 @@ if(isset($request))
 		else if($request == "viewsaved"){
 			include_once('pages/savedjobs.php');
 		}
+		else if($request == "viewjobcategory"){
+			include_once('pages/jobcateroy.php');
+		}
 	}

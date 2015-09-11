@@ -167,6 +167,14 @@
                 $('#wrapper').html(data);
             });
         }
+        function loadjobcategory(){
+            $.post("../helper.php", {
+                request: "viewjobcategory"
+            },
+            function(data){
+                $('#wrapper').html(data);
+            });
+        }
     </script>
 
 </body>

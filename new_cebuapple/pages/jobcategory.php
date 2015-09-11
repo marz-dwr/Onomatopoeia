@@ -2,11 +2,6 @@
     ul{
         list-style-type: none;
     }
-    .list li{
-        background-color: #EE6E73;
-        box-shadow: 0px 9px 26px -11px rgba(0,0,0,0.75);
-        padding-left: 20px;
-    }
     .save-header{
         font-size: 35px;
     } 
@@ -16,64 +11,79 @@
         color: white;
         padding-top: 20px;
         padding-bottom: 20px;
-    }
-    .job-desc-sm, a.job-desc-sm:visited, a.job-desc-sm:hover{
-        color: white;
+        font-size: 13px;
     }
     span.job-title{
         font-size: 40px;
     }
-    .job{
-        font-size: 13px;
-        margin-bottom: 20px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-    .job, .job:active, .job:visited{
-        color:white;
-    }
-
 </style>
 <div id="pcont" class="container-fluid ">
     <div class="cl-mcont">
         <div class="row">
             <div class="col-md-12 headline">
-                <h2><span class="navbar-brand save-header">Job Categories</span></h2>
+                <h2><span class="navbar-brand save-header">Job Categories</span>
+                    <span> <input type="button" value="Update Categories" id="update-category" class="btn btn-success"> </span>
+                </h2>
             </div>
 
-            <div class="col-lg-12 hidden-xs">
-                <ul class="list">
-                    <a href="#" class="jobcateg">
+            <div class="col-lg-4 hidden-xs">
+                <ul>
+                <div class="jobcateg">
+                    <input type="checkbox"><label> &nbsp; Accounting / Finance </label>
+                    <ul>
+                        <li onclick="check(this)">
+                            <input type="checkbox" id="subcategory1">
+                            <label class="check-label" for="subcategory1"> &nbsp; Accountant </label>
+                        </li>
+                        <li onclick="check(this)">
+                            <input type="checkbox" id="subcategory2">
+                            <label class="check-label" for="subcategory2"> &nbsp; Auditor </label>
+                        </li>
+                        <li onclick="check(this)">
+                            <input type="checkbox" id="subcategory3">
+                            <label class="check-label" for="subcategory3"> &nbsp; Bookkeeper </label>
+                        </li>
+                        <li onclick="check(this)">
+                            <input type="checkbox" id="subcategory4">
+                            <label class="check-label" for="subcategory4"> &nbsp; Call Center / BPO </label>
+                        </li>
+                        <li onclick="check(this)">
+                            <input type="checkbox" id="subcategory5">
+                            <label class="check-label" for="subcategory5"> &nbsp; CPA </label>
+                        </li>
+                        <li onclick="check(this)">
+                            <input type="checkbox" id="subcategory6">
+                            <label class="check-label" for="subcategory6"> &nbsp; Finance / Banking </label>
+                        </li>
+                        <li onclick="check(this)">
+                            <input type="checkbox" id="subcategory8">
+                            <label class="check-label" for="subcategory8"> &nbsp; Payroll </label>
+                        </li>
+                        <li onclick="check(this)">
+                            <input type="checkbox" id="subcategory9">
+                            <label class="check-label" for="subcategory9"> &nbsp; Virtual / Home-based </label>
+                        </li>
+                    </ul>
+                </div> <!--job categ accounting-->
+
+
+
+
+
+
+
                         <li>
                             <input type= checkbox>
                             <div class="job"> <input type= checkbox> asdf</div>
                         </li>
                     </a>
-                    <a href="#" class="jobcateg">
-                        <li>
-                            <div class="job"> <input type= checkbox> asdf </div>
-                        </li>
-                    </a>
-                    <a href="#" class="jobcateg">
-                        <li>
-                            <div class="job"> <input type= checkbox> asdf </div>
-                        </li>
-                    </a>
-                    <a href="#" class="jobcateg">
-                        <li>
-                            <div class="job"> <input type= checkbox> asdf </div>
-                        </li>
-                    </a>
-                    <a href="#" class="jobcateg">
-                         <li>
-                             <div class="job"> <input type= checkbox> asdf </div>
-                         </li>
-                     </a>
                 </ul>
-            </div>
-        </div>
-    </div>
-</div>
+
+            </div> <!--job categ-->
+        </div> <!-- row -->
+    </div> <!-- content -->
+</div> <!--container -->
+
 
 <script type="text/javascript">
     var nav = $('#head-nav'); 
@@ -92,274 +102,4 @@
     });
 
 
-$("#category-link").click(function(){
-            $("#page-wrapper").html(json);
-            $("#left .block-content").html($("#left .block-content").html()+content[0]);
-            $("#center .block-content").html(content[1]);
-            $("#right .block-content").html($("#right .block-content").html()+content[2]);
-            $("#picked").text(8-checked+" Categories to Pick");
-            $("input",$(".block-content")).each(function(){
-                if($(this).prop("tagName")=="INPUT")
-                {
-                    var id=$(this).attr("id");
-                    if(id!=undefined||id!=void 0)
-                    {
-                        if(id.indexOf("subcategory")>-1)
-                        {
-                            id=id.replace("subcategory","");
-                            for(var counter=0;counter<desired.length;counter++)
-                            {
-                                if(parseInt(desired[counter]["sub_category_id"])==parseInt(id))
-                                {
-                                    $(this).prop("checked",true);
-                                    $(this).parent().addClass("active-check");
-                                }
-                            }
-                        }
-                        else if(id.indexOf("category")>-1)
-                        {
-                            id=id.replace("category","");
-                            for(var counter=0;counter<desired.length;counter++)
-                            {
-                                if(parseInt(desired[counter]["category_id"])==parseInt(id))
-                                    $(this).prop("checked",true);
-                            }
-                        }
-                    }
-                }
-            });
-            $(".block-content").click(function(){
-                checked=0;
-                 $("input",$(".block-content")).each(function(){
-                    if($(this).is(":checked"))
-                        checked++;
-                     $("#picked").text(8-checked+" Categories to Pick");
-                 });
-                if(checked==8&&!flag)
-                {
-                    $("input",$(".block-content")).each(function(){
-                        if($(this).not(":checked")&&$(this).attr("id")!="update-category"&&$(this).attr("id")!="update-category-2")
-                            $(this).prop("disabled",true);
-                    });
-                }
-                else
-                {
-                    if(checked==7)
-                    {
-                        $("input",$(".block-content")).each(function(){
-                            if($(this).not(":checked"))
-                            {
-                                if($(this).parent().prop("tagName")=="LI"||$(this).hasClass("nosub"))
-                                    $(this).prop("disabled",false);
-                            }
-                        });
-                    }
-                }
-
-                $(".block-content ul li").click(function(event){
-                    event.preventDefault();
-                    if(!$(this).hasClass("nosub"))
-                    {
-                        if(item.checked)
-                            $(this).addClass("active-check");
-                        else
-                            $(this).removeClass("active-check");
-                    }
-                });
-            });
-            $(".block-content").click();//this is needed do not remove.
-            if(checked==8)
-            {
-                $("input",$(".block-content")).each(function(){
-                    if($(this).not(":checked")&&$(this).attr("id")!="update-category"&&$(this).attr("id")!="update-category-2")
-                        $(this).prop("disabled",true);
-                });
-            }
-            var width=$(document).width();
-            if(width<=750)
-            $('html, body').animate({
-                scrollTop: $("#category-content").offset().top
-                }, 200);
-            $("#update-category,#update-category-2").click(function(){
-                var types=[];
-                var ids=[];
-                var c=0;
-                var a=parseInt($("#page-wrapper").css("min-height").replace("px","")/2);
-                var b=$("#update-loader").height()/2;
-                $("#update-loader").css({'margin-top':''+a-b});
-                $("#loader-modal").modal("show");
-                $("input",$(".block-content")).each(function(){
-                    if($(this).is(":checked"))
-                    {
-                        if($(this).attr("id").indexOf("subcategory")>-1)
-                        {
-                            types[c]=0;
-                            ids[c]=parseInt($(this).attr("id").replace("subcategory",""));
-                        }
-                        else
-                        {
-                            ids[c]=parseInt($(this).attr("id").replace("category",""));
-                            types[c]=1;
-                        }
-                        c++;
-                    }
-                 });
-                //types: 0-subcategory, 1-category
-                $.post("../handler.php",{request:"update-categories",types:JSON.stringify(types),ids:JSON.stringify(ids)},
-                       function(data,status)
-                       {
-                            desired=data.desiredpos;
-                            checked=desired.length;                        
-                            setTimeout(function(){    
-                                $("#loader-content div").addClass("hide");
-                                $("#update-loader p").text("Success");
-                                setTimeout(function(){
-                                    $("#loader-modal").modal("hide");
-                                    $("#update-loader p").empty();
-                                },500);
-                            },500);
-                            $("#loader-content div").removeClass("hide");
-                            $("#update-loader p").text("Updating Categories");
-                       },
-                       "json");
-            });
-        });
-
-
-
-
-********************************************************************************************
-$("#category-link").click(function(){
-            $("#page-wrapper").html(json);
-            $("#left .block-content").html($("#left .block-content").html()+content[0]);
-            $("#center .block-content").html(content[1]);
-            $("#right .block-content").html($("#right .block-content").html()+content[2]);
-            $("#picked").text(8-checked+" Categories to Pick");
-            $("input",$(".block-content")).each(function(){
-                if($(this).prop("tagName")=="INPUT")
-                {
-                    var id=$(this).attr("id");
-                    if(id!=undefined||id!=void 0)
-                    {
-                        if(id.indexOf("subcategory")>-1)
-                        {
-                            id=id.replace("subcategory","");
-                            for(var counter=0;counter<desired.length;counter++)
-                            {
-                                if(parseInt(desired[counter]["sub_category_id"])==parseInt(id))
-                                {
-                                    $(this).prop("checked",true);
-                                    $(this).parent().addClass("active-check");
-                                }
-                            }
-                        }
-                        else if(id.indexOf("category")>-1)
-                        {
-                            id=id.replace("category","");
-                            for(var counter=0;counter<desired.length;counter++)
-                            {
-                                if(parseInt(desired[counter]["category_id"])==parseInt(id))
-                                    $(this).prop("checked",true);
-                            }
-                        }
-                    }
-                }
-            });
-            $(".block-content").click(function(){
-                checked=0;
-                 $("input",$(".block-content")).each(function(){
-                    if($(this).is(":checked"))
-                        checked++;
-                     $("#picked").text(8-checked+" Categories to Pick");
-                 });
-                if(checked==8&&!flag)
-                {
-                    $("input",$(".block-content")).each(function(){
-                        if($(this).not(":checked")&&$(this).attr("id")!="update-category"&&$(this).attr("id")!="update-category-2")
-                            $(this).prop("disabled",true);
-                    });
-                }
-                else
-                {
-                    if(checked==7)
-                    {
-                        $("input",$(".block-content")).each(function(){
-                            if($(this).not(":checked"))
-                            {
-                                if($(this).parent().prop("tagName")=="LI"||$(this).hasClass("nosub"))
-                                    $(this).prop("disabled",false);
-                            }
-                        });
-                    }
-                }
-
-                $(".block-content ul li").click(function(event){
-                    event.preventDefault();
-                    if(!$(this).hasClass("nosub"))
-                    {
-                        if(item.checked)
-                            $(this).addClass("active-check");
-                        else
-                            $(this).removeClass("active-check");
-                    }
-                });
-            });
-
-            $(".block-content").click();//this is needed do not remove.
-            if(checked==8)
-            {
-                $("input",$(".block-content")).each(function(){
-                    if($(this).not(":checked")&&$(this).attr("id")!="update-category"&&$(this).attr("id")!="update-category-2")
-                        $(this).prop("disabled",true);
-                });
-            }
-            var width=$(document).width();
-            if(width<=750)
-            $('html, body').animate({
-                scrollTop: $("#category-content").offset().top
-                }, 200);
-            $("#update-category,#update-category-2").click(function(){
-                var types=[];
-                var ids=[];
-                var c=0;
-                var a=parseInt($("#page-wrapper").css("min-height").replace("px","")/2);
-                var b=$("#update-loader").height()/2;
-                $("#update-loader").css({'margin-top':''+a-b});
-                $("#loader-modal").modal("show");
-                $("input",$(".block-content")).each(function(){
-                    if($(this).is(":checked"))
-                    {
-                        if($(this).attr("id").indexOf("subcategory")>-1)
-                        {
-                            types[c]=0;
-                            ids[c]=parseInt($(this).attr("id").replace("subcategory",""));
-                        }
-                        else
-                        {
-                            ids[c]=parseInt($(this).attr("id").replace("category",""));
-                            types[c]=1;
-                        }
-                        c++;
-                    }
-                 });
-                //types: 0-subcategory, 1-category
-                $.post("../handler.php",{request:"update-categories",types:JSON.stringify(types),ids:JSON.stringify(ids)},
-                       function(data,status)
-                       {
-                            desired=data.desiredpos;
-                            checked=desired.length;                        
-                            setTimeout(function(){    
-                                $("#loader-content div").addClass("hide");
-                                $("#update-loader p").text("Success");
-                                setTimeout(function(){
-                                    $("#loader-modal").modal("hide");
-                                    $("#update-loader p").empty();
-                                },500);
-                            },500);
-                            $("#loader-content div").removeClass("hide");
-                            $("#update-loader p").text("Updating Categories");
-                       },
-                       "json");
-            });
-        });    
 </script>
