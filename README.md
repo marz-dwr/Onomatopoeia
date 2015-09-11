@@ -2,4 +2,4 @@
 Files for Onomatopoeia
 
 
-These files are dedicated to Onomatopoeia Inc.
+# These files are dedicated to Onomatopoeia Inc. and for backup purposes only.
