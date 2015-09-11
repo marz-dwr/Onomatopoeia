@@ -248,9 +248,20 @@
 							</a>
 						</span>
 					</div>
-					<br>
-					<br>
-					<br>
+					
+					<table class="table table-hover table-condensed">
+						<thead>
+							<th>
+								<h4>Resume</h4>
+							</th>
+							<th>
+								<h4>Date Added</h4>
+							</th>
+						</thead>
+						<tbody>
+							
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>
