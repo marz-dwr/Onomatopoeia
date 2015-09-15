@@ -559,7 +559,7 @@
 function addSkill(e){
 	document.getElementById("skillset").value = '';
 	document.getElementById("alertmsg").style.display = "block";
-	$('#alertmsg').delay(2500).fadeOut(1500);
+	$('#alertmsg').delay(2500).fadeOut(3000);
 }
 
 function closeAddSkill(e){
