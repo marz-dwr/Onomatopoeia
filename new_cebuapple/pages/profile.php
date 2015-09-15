@@ -131,7 +131,7 @@
 						</span>
 						<span style="float: right;">
 							<a href="#" title="Add Resume">
-								<span data-toggle="modal" data-target="#mod-skill-add">
+								<span data-toggle="modal" onclick="closeAddSkill(this)" data-target="#mod-skill-add">
 									<i class="fa fa-plus edit"></i>
 								</span>
 							</a>
@@ -303,11 +303,17 @@
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <button type="button" class="close" data-dismiss="modal" onclick="closeAddSkill(this)" aria-label="Close">
+	        	<span aria-hidden="true">&times;</span>
+	        </button>
 	        <h4 class="modal-title" id="myModalLabel">Add Skillset</h4>
 	      </div>
 	      <div class="modal-body">
-	      	<div id="alertmsg" class="alert alert-success alert-dismissible" role="alert" style="display: none;">Skill Added Successfully!</div>
+
+	      	<div id="alertmsg" class="alert alert-success fade in" role="alert" style="display: none;">
+	      		Skill Added Successfully!
+	      	</div>
+
 	      	<form>
 	      		<div class="form-group">
 	      			<label for="skillset">Skillset</label>
@@ -316,7 +322,7 @@
 	      	</form>
 	      </div>
 	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-default" onclick="closeAddSkill(this)" data-dismiss="modal">Close</button>
 	        <button type="submit" class="btn btn-primary" onclick="addSkill(this)">Add</button>
 	      </div>
 	    </div>
@@ -551,10 +557,21 @@
 
 <script type="text/javascript">
 function addSkill(e){
-	alert("Hello");
-	// document.getElementById('skillset').value = '';
-	// document.getElementById("alertmsg").style.display = "block";
+	document.getElementById("skillset").value = '';
+	document.getElementById("alertmsg").style.display = "block";
+	$('#alertmsg').delay(2500).fadeOut(1500);
 }
+
+function closeAddSkill(e){
+	document.getElementById("alertmsg").style.display = "none";
+}
+
+// $(document).ready(function(){
+// 	$('#addskill-close').on('click', function(){
+// 		document.getElementById("alertmsg").style.display = "hidden";
+// 	});
+// });
+
 
 $(document).ready(function() {
     var text_max = 250;
@@ -601,26 +618,4 @@ $("#file-4").fileinput({
         alert('File browse clicked for #file-4');
     });
     */
-</script>
-
-<!-- <script src="../assets/js/wysihtml5-0.3.0.js"></script> -->
-<!-- <script src="../assets/js/jquery-1.11.0.min.js"></script> -->
-<!-- <script src="../assets/js/prettify.js"></script> -->
-<!-- <script src="../assets/lib/bootstrap/dist/js/bootstrap.min.js"></script> -->
-<!-- <script src="../assets/js/bootstrap-wysihtml5.js"></script> -->
-
-<script>
-    // $('.textarea').wysihtml5({
-    // 	"font-styles": false, //Font styling, e.g. h1, h2, etc. Default true
-    //     "emphasis": true, //Italics, bold, etc. Default true
-    //     "lists": false, //(Un)ordered lists, e.g. Bullets, Numbers. Default true
-    //     "html": false, //Button which allows you to edit the generated HTML. Default false
-    //     "link": false, //Button to insert a link. Default true
-    //     "image": false, //Button to insert an image. Default true,
-    //     "color": false //Button to change color of font  
-    // });
-</script>
-
-<script type="text/javascript" charset="utf-8">
-    // $(prettyPrint);
 </script>
