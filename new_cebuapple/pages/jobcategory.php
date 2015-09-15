@@ -153,25 +153,37 @@
                     <div class="jobcateg" id="intern">
                         <label class="categ-title"> &nbsp; Internship </label>
                         <ul>
-                            <li style="cursor:default" class="nosub"></li>
+                            <li onclick="check(this)">
+                                <input type="checkbox" id="subcategory25">
+                                <label class="check-label" for="subcategory25"> &nbsp; IT </label>
+                            </li>
                         </ul>
                     </div> <!--end of Intern-->
                     <div class="jobcateg" id="logistics">
                         <label class="categ-title"> &nbsp; Logistics / Warehousing </label>
                         <ul>
-                            <li style="cursor:default" class="nosub"></li>
+                            <li onclick="check(this)">
+                                <input type="checkbox" id="subcategory26">
+                                <label class="check-label" for="subcategory26"> &nbsp; shdsfh </label>
+                            </li>
                         </ul>
                     </div> <!--end of logistics-->
                     <div class="jobcateg" id="purchasing">
                         <label class="categ-title"> &nbsp; Purchasing / Buyer </label>
                         <ul>
-                            <li style="cursor:default" class="nosub"></li>
+                            <li onclick="check(this)">
+                                <input type="checkbox" id="subcategory27">
+                                <label class="check-label" for="subcategory27"> &nbsp; ggjgu </label>
+                            </li>
                         </ul>
                     </div> <!--end of purchasing-->
                     <div class="jobcateg" id="sports">
                         <label class="categ-title"> &nbsp; Sports / Athletics </label>
                         <ul>
-                            <li style="cursor:default" class="nosub"></li>
+                            <li onclick="check(this)">
+                                <input type="checkbox" id="subcategory28">
+                                <label class="check-label" for="subcategory28"> &nbsp; Coach </label>
+                            </li>
                         </ul>
                     </div> <!--end of sports-->
                 </div> <!--end of Left Column-->
@@ -224,13 +236,19 @@
                     <div class="jobcateg" id="education">
                         <label class="categ-title"> &nbsp; Education / Schools </label>
                         <ul>
-                            <li style="cursor:default" class="nosub"></li>
+                            <li onclick="check(this)">
+                                <input type="checkbox" id="subcategory37">
+                                <label class="check-label" for="subcategory37"> &nbsp; Teacher </label>
+                            </li>
                         </ul>
                     </div> <!--end of education-->
                     <div class="jobcateg" id="foreign">
                         <label class="categ-title"> &nbsp; Foreign Language </label>
                         <ul>
-                            <li style="cursor:default" class="nosub"></li>
+                            <li onclick="check(this)">
+                                <input type="checkbox" id="subcategory24">
+                                <label class="check-label" for="subcategory24"> &nbsp; Veterinarian </label>
+                            </li>
                         </ul>
                     </div> <!--end of foreign-->
                     <div class="jobcateg" id="spa">
@@ -390,44 +408,48 @@
                         </ul>
                     </div>
                     <div class="jobcateg" id="government">
-                        <input type="checkbox" id="category18" class="nosub">
                         <label class="categ-title"> &nbsp; Government / Non-profit </label>
                         <ul>
-                            <li style="cursor:default" class="nosub"></li>
+                            <li onclick="check(this)">
+                                <input type="checkbox" id="subcategory47">
+                                <label class="check-label" for="subcategory47"> &nbsp; Auditor </label>
+                            </li>
                         </ul>
                     </div>
                     <div class="jobcateg" id="hr-rec-training">
-                        <input type="checkbox" id="category18" class="nosub">
-                        <label class="categ-title">&nbsp; HR / Recruitment / Training</label>
+                        <label class="categ-title"> &nbsp; HR / Recruitment / Training</label>
                             <ul>
-                                <li style="cursor:default" class="nosub"></li>
+                                <li onclick="check(this)">
+                                <input type="checkbox" id="subcategory48">
+                                <label class="check-label" for="subcategory48"> &nbsp; asdfrdsry </label>
+                            </li>
                             </ul>
                     </div>
                     <div class="jobcateg" id="legal-doc">
-                        <input type="checkbox" id="category18" class="nosub">
-                        <label class="categ-title" for="category18" onclick="categorypick(this)">
-                            &nbsp; Legal / Documentation
-                        </label>
+                        <label class="categ-title"> &nbsp; Legal / Documentation </label>
                         <ul>
-                            <li style="cursor:default" class="nosub"></li>
+                            <li onclick="check(this)">
+                                <input type="checkbox" id="subcategory49">
+                                <label class="check-label" for="subcategory49"> &nbsp; gfdfujty </label>
+                            </li>
                         </ul>
                     </div>
                     <div class="jobcateg" id="prod-manufacturing">
-                        <input type="checkbox" id="category22" class="nosub">
-                        <label class="categ-title" for="category22" onclick="categorypick(this)">
-                            &nbsp; Production / Manufacturing
-                        </label>
+                        <label class="categ-title"> &nbsp; Production / Manufacturing </label>
                         <ul>
-                            <li style="cursor:default" class="nosub"></li>
+                            <li onclick="check(this)">
+                                <input type="checkbox" id="subcategory50">
+                                <label class="check-label" for="subcategory50"> &nbsp; dfgdfyh </label>
+                            </li>
                         </ul>
                     </div>
                     <div class="jobcateg" id="skill-tech">
-                        <input type="checkbox" id="category25" class="nosub">
-                        <label class="categ-title" for="category25" onclick="categorypick(this)">
-                            &nbsp; Skilled Work / Technical
-                        </label>
+                        <label class="categ-title"> &nbsp; Skilled Work / Technical </label>
                         <ul>
-                            <li style="cursor:default" class="nosub"></li>
+                            <li onclick="check(this)">
+                                <input type="checkbox" id="subcategory51">
+                                <label class="check-label" for="subcategory51"> &nbsp; gjhfg </label>
+                            </li>
                         </ul>
                     </div>
                 </div>
