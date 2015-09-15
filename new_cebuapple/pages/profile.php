@@ -285,7 +285,7 @@
 							</tr>
 							<tr>
 								<td>
-									resume(1).pdf
+									resume.pdf
 								</td>
 								<td>
 									Apr 1, 2015
@@ -364,7 +364,7 @@
 	      </div>
 	      <div class="modal-body">
 	        <form>
-	        	<textarea id="textarea" maxlength="250" style="height: 10em; width: 100%; resize: none;"></textarea>
+	        	<textarea id="textarea" placeholder="Write your profile here..." maxlength="250" style="height: 10em; width: 100%; resize: none;"></textarea>
 	        	<div id="textarea_feedback"></div>
 	        </form>
 	      </div>
@@ -484,7 +484,7 @@
 	        <h4 class="modal-title" id="myModalLabel">Add Resume</h4>
 	      </div>
 	      <div class="modal-body">
-	        <textarea autofocus id="resume_add" maxlength="5000" style="height: 40em; width: 100%; resize: none;" selected="selected"></textarea>
+	        <textarea autofocus id="resume_add" placeholder="Write your resume here..." maxlength="5000" style="height: 40em; width: 100%; resize: none;" selected="selected"></textarea>
 	      	<div id="div-textarea"></div>
 	      </div>
 	      <div class="modal-footer">
