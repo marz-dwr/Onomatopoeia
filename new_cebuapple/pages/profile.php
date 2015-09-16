@@ -105,6 +105,13 @@
 	}*/
 </style>
 <div id="pcont" class="container-fluid">
+	<!-- For Profile Update Notification -->
+	<br/>
+	<div id="success-alert" class="alert alert-success fade in" role="alert" style="display: none; float: right; width: 25%; z-index: 2;">
+		Profile has been updated!
+	</div>
+	<!---->
+
     <div class="cl-mcont">
 		<div class="row">
 
@@ -310,7 +317,7 @@
 	      </div>
 	      <div class="modal-body">
 
-	      	<div id="alertmsg" class="alert alert-success fade in" role="alert" style="display: none;">
+	      	<div id="alertmsg-skill" class="alert alert-success fade in" role="alert" style="display: none;">
 	      		Skill Added Successfully!
 	      	</div>
 
@@ -369,8 +376,8 @@
 	        <h4 class="modal-title" id="myModalLabel">Edit Profile</h4>
 	      </div>
 	      <div class="modal-body">
-	        <form>
-	        	<textarea id="textarea" placeholder="Write your profile here..." maxlength="250" style="height: 10em; width: 100%; resize: none;"></textarea>
+	        <form class="form-group">
+	        	<textarea id="textarea" class="form-control" placeholder="Write your profile here..." maxlength="250" style="height: 10em; width: 100%; resize: none;"></textarea>
 	        	<div id="textarea_feedback"></div>
 	        </form>
 	      </div>
@@ -387,10 +394,15 @@
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <button type="button" class="close" data-dismiss="modal" onclick="closeAddEduc(this)" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 	        <h4 class="modal-title" id="myModalLabel">Add Education</h4>
 	      </div>
 	      <div class="modal-body">
+
+	      	<div id="alertmsg-ed" class="alert alert-success fade in" role="alert" style="display: none;">
+	      		Education Added Successfully!
+	      	</div>
+
 	      	<form>
 	      		<div class="form-group">
 	      			<label for="course">Degree</label>
@@ -403,7 +415,7 @@
 		        <div class="form-group">
 		        	<label for="grad_date">Year Graduated</label>
 		        	<!-- <input id="grad_date" type="drop-down" class="form-control"> -->
-		        	<select>
+		        	<select id="year">
 		        		<?php
 		        			for ($i=2015; $i >= 1970; $i--) { 
 		        				echo "<option>".$i."</option>";
@@ -414,8 +426,8 @@
 	      	</form>
 	      </div>
 	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-primary" data-dismiss="modal">Add</button>
+	        <button type="button" class="btn btn-default" onclick="closeAddEduc(this)" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary" onclick="addEduc(this)">Add</button>
 	      </div>
 	    </div>
 	  </div>
@@ -434,7 +446,7 @@
 
 	      	<table class="table table-hover" style="text-align: center;">
 	      		
-	      		<?php
+	      		<?php /*
 	      			// $i = 0;
 	      			for($i = 0; $i < 3; $i++)
 	      			{
@@ -448,6 +460,27 @@
 						echo "<button type='button' class='btn btn-danger' style='margin-top: 7%;'>Delete</button>";
 						echo "</td>";
 						echo "</tr>";
+	      			}*/
+
+	      			$educ_edit = array(
+								array("Bachelor of Science in Information Technology", "University of Cebu - Main Campus", 2015),
+								array("Bachelor of Science in Computer Engineering", "Cebu Institute of Technology - University", 2010),
+								array("Computer Network Management", "Ateneo De La Salle University", 2007)
+								);
+	      			
+	      			for($x = 0; $x < 4; $x++){
+	      				echo "<tr>";
+	      				echo "<td>";
+	      				echo "<form class='form-group'";
+	      				for($y = $x; $y < 4; $y++){
+	      					echo "<input type='text' class='form-control' value='".$educ_edit[$x][$y]."'>";
+	      				}
+	      				echo "</form";
+	      				echo "</td>";
+	      				echo "<td>";
+	      				echo "<button type='button' class='btn btn-danger' style='margin-top: 7%;'>Delete</button>";
+	      				echo "</td>";
+	      				echo "</tr>";
 	      			}
 	      		?>
 	      	</table>
@@ -490,12 +523,21 @@
 	        <h4 class="modal-title" id="myModalLabel">Add Resume</h4>
 	      </div>
 	      <div class="modal-body">
-	        <textarea autofocus id="resume_add" placeholder="Write your resume here..." maxlength="5000" style="height: 40em; width: 100%; resize: none;" selected="selected"></textarea>
+	      	<div id="alertmsg-res" class="alert alert-success fade in" role="alert" style="display: block;">
+				Resume Added Succesfully!
+			</div>
+			<div id="alertmsg-res" class="alert alert-danger fade in" role="alert" style="display: block;">
+				Maximum Limit of Resumes!
+			</div>
+			<form class="form-group">
+				<input id="res-title" type="text" class="form-control" placeholder="Title">
+		        <textarea autofocus id="resume_add" class="form-control" placeholder="Write your resume here..." maxlength="5000" style="height: 40em; width: 100%; resize: none;" selected="selected"></textarea>
+		    </form>
 	      	<div id="div-textarea"></div>
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-primary" data-dismiss="modal">Add</button>
+	        <button type="button" class="btn btn-primary">Add</button>
 	      </div>
 	    </div>
 	  </div>
@@ -536,9 +578,9 @@
 	      		<?php 
 	      			$resume = array("resume.docx", "resume with application letter.docx", "written resume", "resume(1).pdf");
 	      			foreach ($resume as $i) {
-	      				echo "<tr>";
+	      				echo "<tr class='edit-resume'>";
 		    			echo "<td>";
-		    			echo "<a href='#' class='edit-resume' style='font-size: 16px;'>".$i."</a>"."<a href='#'><span style='float: right;'><i class='fa fa-times del-skill'></i></span></a>";
+		    			echo "<a href='#' style='font-size: 16px;'>".$i."</a>"."<a href='#'><span style='float: right;'><i class='fa fa-times del-skill'></i></span></a>";
 		    			echo "</td>";
 		    			echo "</tr>";
 	      			}
@@ -552,26 +594,49 @@
 	    </div>
 	  </div>
 	</div>
-
-</div>
+</div><!-- end of Container fluid -->
 
 <script type="text/javascript">
+//////////////////////////////////////////////////////////////////////
+//For Skill Set Modal Script
+
 function addSkill(e){
 	document.getElementById("skillset").value = '';
-	document.getElementById("alertmsg").style.display = "block";
-	$('#alertmsg').delay(2500).fadeOut(3000);
+	document.getElementById("alertmsg-skill").style.display = "block";
+	$('#alertmsg-skill').delay(2500).fadeOut(3000);
 }
 
 function closeAddSkill(e){
-	document.getElementById("alertmsg").style.display = "none";
+	document.getElementById("alertmsg-skill").style.display = "none";
 }
 
-// $(document).ready(function(){
-// 	$('#addskill-close').on('click', function(){
-// 		document.getElementById("alertmsg").style.display = "hidden";
-// 	});
-// });
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//For Education Modal Script
 
+function addEduc(e){
+	document.getElementById("course").value = '';
+	document.getElementById("n_school").value = '';
+	document.getElementById("year").value = '2015';
+	document.getElementById("alertmsg-ed").style.display = "block";
+	$('#alertmsg-ed').delay(2500).fadeOut(3000);
+}
+
+function closeAddEduc(e){
+	document.getElementById("alertmsg-ed").style.display = "none";
+}
+
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//For Resume Modal Script
+
+function addResume(e){
+	// document.getElementById();
+	document.getElementById("alertmsg-res").style.display = "block";
+}
+
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
 
 $(document).ready(function() {
     var text_max = 250;
