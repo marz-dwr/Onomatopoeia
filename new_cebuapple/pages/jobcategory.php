@@ -20,6 +20,9 @@
     .categ-title{
         font-size: 18px;
     }
+    .categpick{
+        padding-left: 30px;
+    }
 </style>
 <div id="pcont" class="container-fluid ">
     <div class="cl-mcont">
@@ -29,6 +32,7 @@
                     <span style="float: right;"> <input type="button" value="Update Categories" id="update-category" class="btn btn-danger"> </span>
                 </h2>
             </div> <!--end of col-md-12 headline-->
+            <div class="categpick"><h4> 6 Categories to Pick </h4></div>
         </div>
         <div class="row">
             <div class="container">
