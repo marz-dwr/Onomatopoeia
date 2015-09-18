@@ -492,8 +492,8 @@
 	      				echo "<tr>";
 	      				echo "<td>";
 	      				echo "<form class='form-group'";
-	      				for($y = 0; $y < 4; $y++){
-	      					echo "<input type='text' class='form-control' value='".$educ_edit[$x][$y]."'>";
+	      				for($y = 0; $y < 3; $y++){
+	      					echo "<input type='text' class='form-control' value='".$educ_edit[$x][$y]."&nbsp;"."[".$x."][".$y."]'>";
 	      				}
 	      				echo "</form";
 	      				echo "</td>";
