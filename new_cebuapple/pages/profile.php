@@ -317,9 +317,17 @@
 	      </div>
 	      <div class="modal-body">
 
-	      	<div id="alertmsg-skill" class="alert alert-success fade in" role="alert" style="display: none;">
+	      	<!-- Alert Message (SUCCESS) -->
+	      	<div id="alertmsg-skill" class="alert alert-success fade in" role="alert" style="display: block;">
 	      		Skill Added Successfully!
 	      	</div>
+
+	      	<!-- Alert Message (FAILED) -->
+	      	<div id="alertmsg-skill-fail" class="alert alert-danger fade in" role="alert" style="display: block;">
+				Failed Adding Skill!
+			</div>
+
+
 
 	      	<form>
 	      		<div class="form-group">
@@ -376,6 +384,12 @@
 	        <h4 class="modal-title" id="myModalLabel">Edit Profile</h4>
 	      </div>
 	      <div class="modal-body">
+	        	
+	        <!-- Alert Message (UPDATE) -->
+	      	<div id="alertmsg-prof-info" class="alert alert-info fade in" role="alert" style="display: block;">
+				Profile has been updated!
+			</div>
+
 	        <form class="form-group">
 	        	<textarea id="textarea" class="form-control" placeholder="Write your profile here..." maxlength="250" style="height: 10em; width: 100%; resize: none;"></textarea>
 	        	<div id="textarea_feedback"></div>
@@ -399,10 +413,16 @@
 	      </div>
 	      <div class="modal-body">
 
-	      	<div id="alertmsg-ed" class="alert alert-success fade in" role="alert" style="display: none;">
+	      	<!-- Alert Message (SUCCESS) -->
+	      	<div id="alertmsg-ed" class="alert alert-success fade in" role="alert" style="display: block;">
 	      		Education Added Successfully!
 	      	</div>
+	      	<!-- Alert Message (FAILED) -->
+	      	<div id="alertmsg-ed-danger" class="alert alert-danger fade in" role="alert" style="display: block;">
+				I understand you're a GENIUS, but that's ENOUGH!
+			</div>
 
+			<!-- Input Forms -->
 	      	<form>
 	      		<div class="form-group">
 	      			<label for="course">Degree</label>
@@ -468,17 +488,17 @@
 								array("Computer Network Management", "Ateneo De La Salle University", 2007)
 								);
 	      			
-	      			for($x = 0; $x < 4; $x++){
+	      			for($x = 0; $x <= 2; $x++){
 	      				echo "<tr>";
 	      				echo "<td>";
 	      				echo "<form class='form-group'";
-	      				for($y = $x; $y < 4; $y++){
+	      				for($y = 0; $y < 4; $y++){
 	      					echo "<input type='text' class='form-control' value='".$educ_edit[$x][$y]."'>";
 	      				}
 	      				echo "</form";
 	      				echo "</td>";
 	      				echo "<td>";
-	      				echo "<button type='button' class='btn btn-danger' style='margin-top: 7%;'>Delete</button>";
+	      				echo "<button type='button' class='btn btn-danger' style='margin-top: 10%;'>Delete</button>";
 	      				echo "</td>";
 	      				echo "</tr>";
 	      			}
@@ -523,12 +543,18 @@
 	        <h4 class="modal-title" id="myModalLabel">Add Resume</h4>
 	      </div>
 	      <div class="modal-body">
+	      	
+	      	<!-- Alert Message (SUCCESS) -->
 	      	<div id="alertmsg-res" class="alert alert-success fade in" role="alert" style="display: block;">
 				Resume Added Succesfully!
 			</div>
+			
+			<!-- Alert Message (FAILED) -->
 			<div id="alertmsg-res" class="alert alert-danger fade in" role="alert" style="display: block;">
 				Maximum Limit of Resumes!
 			</div>
+
+
 			<form class="form-group">
 				<input id="res-title" type="text" class="form-control" placeholder="Title">
 		        <textarea autofocus id="resume_add" class="form-control" placeholder="Write your resume here..." maxlength="5000" style="height: 40em; width: 100%; resize: none;" selected="selected"></textarea>
@@ -600,40 +626,40 @@
 //////////////////////////////////////////////////////////////////////
 //For Skill Set Modal Script
 
-function addSkill(e){
-	document.getElementById("skillset").value = '';
-	document.getElementById("alertmsg-skill").style.display = "block";
-	$('#alertmsg-skill').delay(2500).fadeOut(3000);
-}
+// function addSkill(e){
+// 	document.getElementById("skillset").value = '';
+// 	document.getElementById("alertmsg-skill").style.display = "block";
+// 	$('#alertmsg-skill').delay(2500).fadeOut(3000);
+// }
 
-function closeAddSkill(e){
-	document.getElementById("alertmsg-skill").style.display = "none";
-}
+// function closeAddSkill(e){
+// 	document.getElementById("alertmsg-skill").style.display = "none";
+// }
 
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 //For Education Modal Script
 
-function addEduc(e){
-	document.getElementById("course").value = '';
-	document.getElementById("n_school").value = '';
-	document.getElementById("year").value = '2015';
-	document.getElementById("alertmsg-ed").style.display = "block";
-	$('#alertmsg-ed').delay(2500).fadeOut(3000);
-}
+// function addEduc(e){
+// 	document.getElementById("course").value = '';
+// 	document.getElementById("n_school").value = '';
+// 	document.getElementById("year").value = '2015';
+// 	document.getElementById("alertmsg-ed").style.display = "block";
+// 	$('#alertmsg-ed').delay(2500).fadeOut(3000);
+// }
 
-function closeAddEduc(e){
-	document.getElementById("alertmsg-ed").style.display = "none";
-}
+// function closeAddEduc(e){
+// 	document.getElementById("alertmsg-ed").style.display = "none";
+// }
 
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 //For Resume Modal Script
 
-function addResume(e){
-	// document.getElementById();
-	document.getElementById("alertmsg-res").style.display = "block";
-}
+// function addResume(e){
+// 	// document.getElementById();
+// 	document.getElementById("alertmsg-res").style.display = "block";
+// }
 
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
