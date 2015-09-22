@@ -2,6 +2,17 @@
     ul{
         list-style-type: none;
     }
+
+    div.sender-container{
+        background-color: #eeaa32;
+        box-shadow: 0px 9px 26px -11px rgba(0,0,0,0.75);
+    }
+
+    div.message-content{
+        background-color: white;
+        box-shadow: 0px 9px 26px -11px rgba(0,0,0,0.75);
+    }
+
     .sender:hover{
         font-weight: bold;
     }
@@ -9,11 +20,7 @@
     .list-header{
         font-size: 35px;
     }
-    /* anchor tag for class job-desc-sm */
-    /*.job-desc-sm, a.job-desc-sm:visited, a.job-desc-sm:hover{
-        color: white;
-    }*/
-    /***********************************/
+
     span.job-title{
         font-size: 20px;
     }
@@ -27,8 +34,8 @@
         </div><!-- first row -->
         <div class="container">
             <div class="row">
-                <div class="col-md-4" style="background-color: #eeaa32; height: 100%;">
-                    <div>
+                <div class="col-xs-6 col-md-4">
+                    <div class="sender-container">
                         <?php
                             $msg = array(
                                         array("Ace", "Subject", "Message"),
@@ -45,8 +52,13 @@
                         ?>
                     </div>
                 </div>
-                <div class="col-md-8" style="background-color: gray; height: 100%;">
-                    .col-md-8
+                <div class="col-xs-12 col-sm-6 col-md-8">
+                    <div class="message-content">
+                        Display Message here...
+                        <br/>
+                        <br/>
+                        <br/>
+                    </div>
                 </div>
             </div><!-- second row -->
         </div><!-- container -->
