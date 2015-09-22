@@ -488,7 +488,7 @@
 	      				echo "</form";
 	      				echo "</td>";
 	      				echo "<td>";
-	      				echo "<button type='button' class='btn btn-danger' style='margin-top: 20%;'>Delete</button>";
+	      				echo "<button type='button' class='btn btn-danger' style='margin-top: 21.5%;'>Delete</button>";
 	      				echo "</td>";
 	      				echo "</tr>";
 	      			}
