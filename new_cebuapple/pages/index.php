@@ -41,7 +41,7 @@
                         <ul class="dropdown-menu">
                             <li><a href="#" onclick="getProfile(this)">Profile</a>
                             </li>
-                            <li><a href="#">Messages</a>
+                            <li><a href="#" onclick="loadMessages(this)">Messages</a>
                             </li>
                             <li class="divider"></li>
                             <li><a href="#">Sign Out</a>
@@ -170,6 +170,15 @@
         function loadjobcategory(){
             $.post("../helper.php", {
                 request: "viewjobcategory"
+            },
+            function(data){
+                $('#wrapper').html(data);
+            });
+        }
+
+        function loadMessages(){
+            $.post("../helper.php",{
+                request: "viewmessages"
             },
             function(data){
                 $('#wrapper').html(data);

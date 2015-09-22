@@ -16,4 +16,7 @@ if(isset($request))
 		else if($request == "viewjobcategory"){
 			include_once('pages/jobcategory.php');
 		}
+		else if($request == "viewmessages"){
+			include_once('pages/messages.php');
+		}
 	}
