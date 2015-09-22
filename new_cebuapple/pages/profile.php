@@ -1,3 +1,7 @@
+<!-- Profile Made by: Lorenz Calang -->
+<!-- Month Started: August 2015 -->
+<!-- Notes: No Backend yet, incomplete profile setup, needs updated details. -->
+
 <link rel="stylesheet" href="../assets/css/animate.min.css">
 <link rel="stylesheet" href="../assets/css/animate-delay.css">
 <link rel="stylesheet" href="../assets/lib/font-awesome/css/font-awesome.min.css">
@@ -319,12 +323,12 @@
 
 	      	<!-- Alert Message (SUCCESS) -->
 	      	<div id="alertmsg-skill" class="alert alert-success fade in" role="alert" style="display: block;">
-	      		Skill Added Successfully!
+	      		<i class="fa fa-check"></i> Skill Added Successfully!
 	      	</div>
 
 	      	<!-- Alert Message (FAILED) -->
 	      	<div id="alertmsg-skill-fail" class="alert alert-danger fade in" role="alert" style="display: block;">
-				Failed Adding Skill!
+				<i class="fa fa-times"></i> Failed Adding Skill!
 			</div>
 
 
@@ -387,7 +391,7 @@
 	        	
 	        <!-- Alert Message (UPDATE) -->
 	      	<div id="alertmsg-prof-info" class="alert alert-info fade in" role="alert" style="display: block;">
-				Profile has been updated!
+				<i class="fa fa-check"></i> Profile has been updated!
 			</div>
 
 	        <form class="form-group">
@@ -415,11 +419,11 @@
 
 	      	<!-- Alert Message (SUCCESS) -->
 	      	<div id="alertmsg-ed" class="alert alert-success fade in" role="alert" style="display: block;">
-	      		Education Added Successfully!
+	      		<i class="fa fa-check"></i> Education Added Successfully!
 	      	</div>
 	      	<!-- Alert Message (FAILED) -->
 	      	<div id="alertmsg-ed-danger" class="alert alert-danger fade in" role="alert" style="display: block;">
-				I understand you're a GENIUS, but that's ENOUGH!
+				<i class="fa fa-times"></i> I understand you're a GENIUS, but that's ENOUGH!
 			</div>
 
 			<!-- Input Forms -->
@@ -466,21 +470,7 @@
 
 	      	<table class="table table-hover" style="text-align: center;">
 	      		
-	      		<?php /*
-	      			// $i = 0;
-	      			for($i = 0; $i < 3; $i++)
-	      			{
-	      				echo "<tr>";
-	      				echo " <td>";
-	      				echo "  <div class='form-group'>
-								  <input type='text' style='width: 100%' class='form-control' value='Bachelor of Science in Information Technology'>
-							    </div>";
-						echo " </td>";
-						echo "<td>";
-						echo "<button type='button' class='btn btn-danger' style='margin-top: 7%;'>Delete</button>";
-						echo "</td>";
-						echo "</tr>";
-	      			}*/
+	      		<?php 
 
 	      			$educ_edit = array(
 								array("Bachelor of Science in Information Technology", "University of Cebu - Main Campus", 2015),
@@ -488,43 +478,22 @@
 								array("Computer Network Management", "Ateneo De La Salle University", 2007)
 								);
 	      			
-	      			for($x = 0; $x <= 2; $x++){
+	      			for ($row = 0; $row <  3; $row++) {
 	      				echo "<tr>";
 	      				echo "<td>";
-	      				echo "<form class='form-group'";
-	      				for($y = 0; $y < 3; $y++){
-	      					echo "<input type='text' class='form-control' value='".$educ_edit[$x][$y]."&nbsp;"."[".$x."][".$y."]'>";
+	      				echo "<form class='form-group'>";
+	      				for ($col = 0; $col <  3; $col++){
+	      					echo "<input type='text' class='form-control' value='".$educ_edit[$row][$col]."'>";
 	      				}
 	      				echo "</form";
 	      				echo "</td>";
 	      				echo "<td>";
-	      				echo "<button type='button' class='btn btn-danger' style='margin-top: 10%;'>Delete</button>";
+	      				echo "<button type='button' class='btn btn-danger' style='margin-top: 20%;'>Delete</button>";
 	      				echo "</td>";
 	      				echo "</tr>";
 	      			}
 	      		?>
 	      	</table>
-	      	<!-- <div class="form-group">
-		        <div class="checkbox">
-					<label>
-				    	<input type="checkbox" for="educ1"> <input type="text" style="width: 100%" class="form-control" value="Bachelor of Science in Information Technology">
-					</label>
-				</div>
-			</div>
-			<div class="form-group">
-				<div class="checkbox">
-					<label>
-				    	<input type="checkbox" for="educ2"> <input type="text" class="form-control" value="Bachelor of Science in Computer Science">
-					</label>
-				</div>
-			</div>
-			<div class="form-group">
-				<div class="checkbox">
-					<label>
-				    	<input type="checkbox" for="educ3"> <span><input type="text" class="form-control" value="Bachelor of Arts Major in Telecommunications"></span>
-					</label>
-				</div>
-			</div> -->
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -546,12 +515,12 @@
 	      	
 	      	<!-- Alert Message (SUCCESS) -->
 	      	<div id="alertmsg-res" class="alert alert-success fade in" role="alert" style="display: block;">
-				Resume Added Succesfully!
+				<i class="fa fa-check"></i> Resume Added Succesfully!
 			</div>
 			
 			<!-- Alert Message (FAILED) -->
 			<div id="alertmsg-res" class="alert alert-danger fade in" role="alert" style="display: block;">
-				Maximum Limit of Resumes!
+				<i class="fa fa-times"></i> Maximum Limit of Resumes!
 			</div>
 
 
