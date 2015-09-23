@@ -2,19 +2,64 @@
     ul{
         list-style-type: none;
     }
-
-    div.sender-container{
-        background-color: #eeaa32;
-        box-shadow: 0px 9px 26px -11px rgba(0,0,0,0.75);
+    div.container-fluid{
+        height: 100% !important;
+    }
+    div.cl-mont{
+        height: 100% !important;
+    }
+    div.row{
+        height: 100% !important;
     }
 
-    div.message-content{
+    div.sender-container{
+        background-color: #EE6E73;
+        box-shadow: 0px 9px 30px -7px rgba(0,0,0,0.75);
+        height: 40em;
+        padding: 10px;
+    }
+    div.sender-container:hover{
+        overflow-x: hidden; 
+        overflow-y: auto;
+    }
+
+    div.msg-content{
         background-color: white;
         box-shadow: 0px 9px 26px -11px rgba(0,0,0,0.75);
     }
 
+    div.selected.msg-sender{
+        background-color: rgba(250,250,250,0.75);
+        color: black;
+    }
+
+    div.msg-sender{
+/*        border: solid-bottom;
+        border-color: white;
+        border-width: 1px;*/
+        margin-bottom: 5px;
+        color: white;
+    }
+    div.msg-sender:hover{
+        background-color: rgba(250,250,250,0.75);
+        color: black;
+    }
+
     .sender:hover{
         font-weight: bold;
+    }
+
+    .new-msg{
+        color: white;
+        text-align: middle;
+    }
+
+    .new-msg:hover{
+        color: white;
+    }
+
+    .btn{
+        border-radius: 4px;
     }
 
     .list-header{
@@ -32,24 +77,157 @@
                 <h2><span class="navbar-brand list-header">Messages</span></h2>
             </div>
         </div><!-- first row -->
+        <div class="row">
+            <div class="col-md-1">
+                <div class="container">
+                    <div class="msg-menu" style="float: left;">
+                        <a href="#" class="btn btn-primary new-msg" data-toggle="tooltip" title="Create Message">
+                            New &nbsp;<i class="fa fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <br />
         <div class="container">
             <div class="row">
                 <div class="col-xs-6 col-md-4">
                     <div class="sender-container">
                         <?php
-                            $msg = array(
-                                        array("Ace", "Subject", "Message"),
-                                        array("Kenneth", "HAHA", "HAHAHAHA"),
-                                        array("Reymark", "HOHO", "HOHOHOHO"),
-                                    );
-                            echo "<ul>";
-                            for($x = 0; $x < 3; $x++){
-                                echo "<a href='#' class='sender'>";
-                                echo "<li>".$msg[$x][0]."</li>";
-                                echo "</a>";
-                            }
-                            echo "</ul>";
+                            // $msg = array(
+                            //             array("Ace", "Subject", "Message"),
+                            //             array("Kenneth", "HAHA", "HAHAHAHA"),
+                            //             array("Reymark", "HOHO", "HOHOHOHO"),
+                            //         );
+                            // echo "<ul>";
+                            // for($x = 0; $x < 3; $x++){
+                            //     echo "<a href='#' class='sender'>";
+                            //     echo "<li>".$msg[$x][0]."</li>";
+                            //     echo "</a>";
+                            // }
+                            // echo "</ul>";
                         ?>
+                        <a href="#">
+                            <div class="msg-sender selected">
+                                <img alt="Avatar" src="../assets/img/avatar2.jpg"><span>Lorenz Calang</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="msg-sender">
+                                <img alt="Avatar" src="../assets/img/avatar_30.jpg"><span>Lorenz Calang</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="msg-sender">
+                                <img alt="Avatar" src="../assets/img/avatar3_30.jpg"><span>Lorenz Calang</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="msg-sender">
+                                <img alt="Avatar" src="../assets/img/avatar4_30.jpg"><span>Lorenz Calang</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="msg-sender">
+                                <img alt="Avatar" src="../assets/img/avatar2.jpg"><span>Lorenz Calang</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="msg-sender">
+                                <img alt="Avatar" src="../assets/img/avatar_30.jpg"><span>Lorenz Calang</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="msg-sender">
+                                <img alt="Avatar" src="../assets/img/avatar3_30.jpg"><span>Lorenz Calang</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="msg-sender">
+                                <img alt="Avatar" src="../assets/img/avatar4_30.jpg"><span>Lorenz Calang</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="msg-sender">
+                                <img alt="Avatar" src="../assets/img/avatar2.jpg"><span>Lorenz Calang</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="msg-sender">
+                                <img alt="Avatar" src="../assets/img/avatar_30.jpg"><span>Lorenz Calang</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="msg-sender">
+                                <img alt="Avatar" src="../assets/img/avatar3_30.jpg"><span>Lorenz Calang</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="msg-sender">
+                                <img alt="Avatar" src="../assets/img/avatar4_30.jpg"><span>Lorenz Calang</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="msg-sender">
+                                <img alt="Avatar" src="../assets/img/avatar2.jpg"><span>Lorenz Calang</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="msg-sender">
+                                <img alt="Avatar" src="../assets/img/avatar_30.jpg"><span>Lorenz Calang</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="msg-sender">
+                                <img alt="Avatar" src="../assets/img/avatar3_30.jpg"><span>Lorenz Calang</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="msg-sender">
+                                <img alt="Avatar" src="../assets/img/avatar4_30.jpg"><span>Lorenz Calang</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="msg-sender">
+                                <img alt="Avatar" src="../assets/img/avatar2.jpg"><span>Lorenz Calang</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="msg-sender">
+                                <img alt="Avatar" src="../assets/img/avatar_30.jpg"><span>Lorenz Calang</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="msg-sender">
+                                <img alt="Avatar" src="../assets/img/avatar3_30.jpg"><span>Lorenz Calang</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="msg-sender">
+                                <img alt="Avatar" src="../assets/img/avatar4_30.jpg"><span>Lorenz Calang</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="msg-sender">
+                                <img alt="Avatar" src="../assets/img/avatar2.jpg"><span>Lorenz Calang</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="msg-sender">
+                                <img alt="Avatar" src="../assets/img/avatar_30.jpg"><span>Lorenz Calang</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="msg-sender">
+                                <img alt="Avatar" src="../assets/img/avatar3_30.jpg"><span>Lorenz Calang</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="msg-sender">
+                                <img alt="Avatar" src="../assets/img/avatar4_30.jpg"><span>Lorenz Calang</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-8">
@@ -58,6 +236,24 @@
                         <br/>
                         <br/>
                         <br/>
+                    </div>
+                    <div class="message-reply">
+                        <form class="form-group">
+                            <textarea class="form-control" style="resize: vertical;"></textarea>
+                            <br />
+                            <a href="#" class="btn btn-default">
+                                Reply&nbsp;
+                                <span>
+                                    <i class="fa fa-reply"></i>
+                                </span>
+                            </a>
+                            <a href="#" class="btn btn-danger" style="float: right;">
+                                Delete Message&nbsp;
+                                <span>
+                                    <i class="fa fa-trash-o"></i>
+                                </span>
+                            </a>
+                        </form>
                     </div>
                 </div>
             </div><!-- second row -->

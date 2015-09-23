@@ -39,12 +39,15 @@
                             <img alt="Avatar" src="../assets/img/avatar2.jpg"><span>Lorenz Calang</span><b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#" onclick="getProfile(this)">Profile</a>
+                            <li>
+                                <a href="#" onclick="getProfile(this)">Profile</a>
                             </li>
-                            <li><a href="#" onclick="loadMessages(this)">Messages</a>
+                            <li>
+                                <a href="#" onclick="loadMessages(this)">Messages</a>
                             </li>
                             <li class="divider"></li>
-                            <li><a href="#">Sign Out</a>
+                            <li>
+                                <a href="#">Sign Out</a>
                             </li>
                         </ul>
                     </li>
@@ -56,7 +59,7 @@
                                 <div class="nano nscroller">
                                     <div class="content">
                                         <ul>
-                                            <li><a href="#"><i class="fa fa-cloud-upload info"></i><b>Daniel</b> is now following you <span class="date">2 minutes ago.</span></a>
+                                            <li><a href="#"><i class="fa fa-cloud-upload info"></i><b>Video</b> is already uploaded <span class="date">2 minutes ago.</span></a>
                                             </li>
                                             <li><a href="#"><i class="fa fa-male success"></i><b>Michael</b> is now following you <span class="date">15 minutes ago.</span></a>
                                             </li>
