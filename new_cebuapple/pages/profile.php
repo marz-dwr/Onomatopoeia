@@ -110,10 +110,10 @@
 </style>
 <div id="pcont" class="container-fluid">
 	<!-- For Profile Update Notification -->
-	<br/>
+	<!-- <br/>
 	<div id="success-alert" class="alert alert-success fade in" role="alert" style="display: none; float: right; width: 25%; z-index: 2;">
 		Profile has been updated!
-	</div>
+	</div> -->
 	<!---->
 
     <div class="cl-mcont">
@@ -323,12 +323,12 @@
 
 	      	<!-- Alert Message (SUCCESS) -->
 	      	<div id="alertmsg-skill" class="alert alert-success fade in" role="alert" style="display: block;">
-	      		<i class="fa fa-check"></i> Skill Added Successfully!
+	      		<i class="fa fa-check"></i> Skillset Added Successfully!
 	      	</div>
 
 	      	<!-- Alert Message (FAILED) -->
 	      	<div id="alertmsg-skill-fail" class="alert alert-danger fade in" role="alert" style="display: block;">
-				<i class="fa fa-times"></i> Failed Adding Skill!
+				<i class="fa fa-times"></i> Failed to add Skillset!
 			</div>
 
 
@@ -391,7 +391,7 @@
 	        	
 	        <!-- Alert Message (UPDATE) -->
 	      	<div id="alertmsg-prof-info" class="alert alert-info fade in" role="alert" style="display: block;">
-				<i class="fa fa-check"></i> Profile has been updated!
+				<i class="fa fa-exclamation-circle"></i> Profile has been updated!
 			</div>
 
 	        <form class="form-group">
@@ -423,7 +423,7 @@
 	      	</div>
 	      	<!-- Alert Message (FAILED) -->
 	      	<div id="alertmsg-ed-danger" class="alert alert-danger fade in" role="alert" style="display: block;">
-				<i class="fa fa-times"></i> I understand you're a GENIUS, but that's ENOUGH!
+				<i class="fa fa-times"></i> Failed to add Education!
 			</div>
 
 			<!-- Input Forms -->

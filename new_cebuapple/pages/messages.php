@@ -1,3 +1,4 @@
+<script type="text/javascript" src="../assets/js/expanding.js"></script>
 <style>
     ul{
         list-style-type: none;
@@ -14,7 +15,7 @@
 
     div.sender-container{
         background-color: #EE6E73;
-        box-shadow: 0px 9px 30px -7px rgba(0,0,0,0.75);
+        box-shadow: 0px 9px 35px -7px rgba(0,0,0,0.75);
         height: 40em;
         padding: 10px;
     }
@@ -81,8 +82,8 @@
             <div class="col-md-1">
                 <div class="container">
                     <div class="msg-menu" style="float: left;">
-                        <a href="#" class="btn btn-primary new-msg" data-toggle="tooltip" title="Create Message">
-                            New &nbsp;<i class="fa fa-envelope"></i>
+                        <a href="#" class="btn btn-primary new-msg" data-toggle="modal" data-target="#myModal" title="Create Message">
+                            New <i class="fa fa-envelope"></i>
                         </a>
                     </div>
                 </div>
@@ -94,20 +95,6 @@
             <div class="row">
                 <div class="col-xs-6 col-md-4">
                     <div class="sender-container">
-                        <?php
-                            // $msg = array(
-                            //             array("Ace", "Subject", "Message"),
-                            //             array("Kenneth", "HAHA", "HAHAHAHA"),
-                            //             array("Reymark", "HOHO", "HOHOHOHO"),
-                            //         );
-                            // echo "<ul>";
-                            // for($x = 0; $x < 3; $x++){
-                            //     echo "<a href='#' class='sender'>";
-                            //     echo "<li>".$msg[$x][0]."</li>";
-                            //     echo "</a>";
-                            // }
-                            // echo "</ul>";
-                        ?>
                         <a href="#">
                             <div class="msg-sender selected">
                                 <img alt="Avatar" src="../assets/img/avatar2.jpg"><span>Lorenz Calang</span>
@@ -239,7 +226,7 @@
                     </div>
                     <div class="message-reply">
                         <form class="form-group">
-                            <textarea class="form-control" style="resize: vertical;"></textarea>
+                            <textarea class="form-control expanding" style="resize: vertical;"></textarea>
                             <br />
                             <a href="#" class="btn btn-default">
                                 Reply&nbsp;
@@ -259,6 +246,24 @@
             </div><!-- second row -->
         </div><!-- container -->
     </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    To: <input type="text" class="form-control">
+                </div>
+                <div class="modal-body">
+                    <textarea class="form-control" style="resize: vertical; height: 250px;"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 </div>
 <script type="text/javascript" href="../assets/dist/js/material.js"></script>
 <script type="text/javascript" href="../assets/dist/js/material.min.js"></script>
