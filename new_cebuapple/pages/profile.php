@@ -10,6 +10,7 @@
 <link href="../assets/css/fileinput.css" media="all" rel="stylesheet" type="text/css" />
 <!-- <script src="../assets/lib/jquery/jquery.min.js"></script> -->
 <script src="../assets/js/fileinput.js" type="text/javascript"></script>
+<script src="../assets/js/fileinput.min.js" type="text/javascript"></script>
 
 
 <!-- for wysihtml5 textarea -->
@@ -539,8 +540,8 @@
 	</div>
 
 	<!-- Modal for Upload Resume -->
-	<div class="modal fade" id="mod-res-up" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	  <div class="modal-dialog" role="document">
+	<div class="modal fade bs-example-modal-lg" id="mod-res-up" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -671,9 +672,9 @@ $(".btn-info").on('click', function() {
     $('#file-4').fileinput('refresh', {previewClass:'bg-info'});
 });
 
-$('#file-4').on('fileselectnone', function() {
-    alert('Huh! You selected no files.');
-});
+// $('#file-4').on('fileselectnone', function() {
+//     alert('Huh! You selected no files.');
+// });
 // $('#file-4').on('filebrowse', function() {
 //     alert('File browse clicked for #file-4');
 // });
