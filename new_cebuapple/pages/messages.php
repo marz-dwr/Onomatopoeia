@@ -245,14 +245,14 @@
                 </div>
             </div><!-- second row -->
         </div><!-- container -->
-    </div>
-
+    </div><!-- cl-mont -->
+    
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    To: <input type="text" class="form-control">
+                    To: <input type="text" id="receiver" class="form-control">
                 </div>
                 <div class="modal-body">
                     <textarea class="form-control" style="resize: vertical; height: 250px;"></textarea>
@@ -286,4 +286,8 @@
             }
         }
     });
+
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#receiver').focus();
+    })
 </script>

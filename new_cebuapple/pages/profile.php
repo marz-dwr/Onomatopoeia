@@ -593,7 +593,7 @@
 
 <script type="text/javascript">
 //////////////////////////////////////////////////////////////////////
-//For Skill Set Modal Script
+//For Skillset Modal Script
 
 // function addSkill(e){
 // 	document.getElementById("skillset").value = '';
@@ -658,24 +658,24 @@ $(document).ready(function() {
 });
 
 $("#file-4").fileinput({
-		uploadExtraData: {kvId: '10'}
-	});
-    $(".btn-warning").on('click', function() {
-        if ($('#file-4').attr('disabled')) {
-            $('#file-4').fileinput('enable');
-        } else {
-            $('#file-4').fileinput('disable');
-        }
-    });    
-    $(".btn-info").on('click', function() {
-        $('#file-4').fileinput('refresh', {previewClass:'bg-info'});
-    });
-    /*
-    $('#file-4').on('fileselectnone', function() {
-        alert('Huh! You selected no files.');
-    });
-    $('#file-4').on('filebrowse', function() {
-        alert('File browse clicked for #file-4');
-    });
-    */
+	uploadExtraData: {kvId: '10'}
+});
+$(".btn-warning").on('click', function() {
+	if ($('#file-4').attr('disabled')) {
+	    $('#file-4').fileinput('enable');
+	} else {
+	    $('#file-4').fileinput('disable');
+	}
+});    
+$(".btn-info").on('click', function() {
+    $('#file-4').fileinput('refresh', {previewClass:'bg-info'});
+});
+
+$('#file-4').on('fileselectnone', function() {
+    alert('Huh! You selected no files.');
+});
+// $('#file-4').on('filebrowse', function() {
+//     alert('File browse clicked for #file-4');
+// });
+    
 </script>
