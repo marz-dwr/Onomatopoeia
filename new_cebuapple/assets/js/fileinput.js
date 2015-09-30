@@ -295,7 +295,8 @@
             'title="{removeTitle}"{dataUrl}{dataKey}>{removeIcon}</button>\n',
         tActionUpload = '<button type="button" class="kv-file-upload {uploadClass}" title="{uploadTitle}">' +
             '   {uploadIcon}\n</button>\n',
-        tZoom = '<button type="button" class="btn btn-default btn-xs btn-block" title="{zoomTitle}: {caption}">\n' +
+        //zoom has been hidden to avoid modal disruption
+        tZoom = '<button type="button" class="btn btn-default btn-xs btn-block hidden" title="{zoomTitle}: {caption}" onclick="{dialog}">\n' +
             '   {zoomInd}\n' +
             '</button>\n',
         tGeneric = '<div class="file-preview-frame{frameClass}" id="{previewId}" data-fileindex="{fileindex}">\n' +
