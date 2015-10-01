@@ -218,7 +218,10 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-8">
-                    <div class="message-content">
+                    <!-- static Message Display -->
+                    <div>
+                    <!-- Card Background -->
+                    <!-- <div class="msg-content"> -->
                         Display Message here...
                         <br/>
                         <br/>
