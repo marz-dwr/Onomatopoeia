@@ -40,153 +40,153 @@
                     <div class="jobcateg" id="accounting">
                         <label class="categ-title"> &nbsp; Accounting / Finance</label>
                         <ul>
-                            <li onclick="check(this)" class="active-check">
+                            <li class="active-check">
                                 <input type="checkbox" id="subcategory1">
                                 <label class="check-label" for="subcategory1"> &nbsp; Accountant </label>
                             </li>
-                            <li onclick="check(this)" class="active-check">
+                            <li class="active-check">
                                 <input type="checkbox" id="subcategory2">
                                 <label class="check-label" for="subcategory2"> &nbsp; Auditor </label>
                             </li>
-                            <li onclick="check(this)" class="active-check">
+                            <li class="active-check">
                                 <input type="checkbox" id="subcategory3">
                                 <label class="check-label" for="subcategory3"> &nbsp; Bookkeeper </label>
                             </li>
-                            <li onclick="check(this)">
+                            <li>
                                 <input type="checkbox" id="subcategory4">
                                 <label class="check-label" for="subcategory4"> &nbsp; Call Center / BPO </label>
                             </li>
-                            <li onclick="check(this)">
+                            <li>
                                 <input type="checkbox" id="subcategory5">
                                 <label class="check-label" for="subcategory5"> &nbsp; CPA </label>
                             </li>
-                            <li onclick="check(this)">
+                            <li>
                                 <input type="checkbox" id="subcategory6">
                                 <label class="check-label" for="subcategory6"> &nbsp; Finance / Banking </label>
                             </li>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory8">
-                                <label class="check-label" for="subcategory8"> &nbsp; Payroll</label>
+                            <li>
+                                <input type="checkbox" id="subcategory7">
+                                <label class="check-label" for="subcategory7"> &nbsp; Payroll</label>
                             </li>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory9">
-                                <label class="check-label" for="subcategory9"> &nbsp; Virtual / Home-based </label>
+                            <li>
+                                <input type="checkbox" id="subcategory8">
+                                <label class="check-label" for="subcategory8"> &nbsp; Virtual / Home-based </label>
                             </li>
                         </ul>
                     </div> <!--end of accounting -->
                     <div class="jobcateg" id="airline">
                         <label class="categ-title">&nbsp; Airline / Airport</label>
                         <ul>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory10">
-                                <label class="check-label" for="subcategory10"> &nbsp; Pilot </label>
+                            <li>
+                                <input type="checkbox" id="subcategory9">
+                                <label class="check-label" for="subcategory9"> &nbsp; Pilot </label>
                             </li>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory11">
-                                <label class="check-label" for="subcategory11"> &nbsp; Flight Attendant </label>
+                            <li>
+                                <input type="checkbox" id="subcategory10">
+                                <label class="check-label" for="subcategory10"> &nbsp; Flight Attendant </label>
                             </li>
                         </ul>
                     </div> <!--end of Airline -->
                     <div class="jobcateg" id="domestic">
                         <label class="categ-title"> &nbsp; Domestic / Caretaker </label>
                         <ul>
-                             <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory12">
-                                <label class="check-label" for="subcategory12"> &nbsp; aafdsgrfg </label>
+                             <li>
+                                <input type="checkbox" id="subcategory11">
+                                <label class="check-label" for="subcategory11"> &nbsp; aafdsgrfg </label>
                             </li>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory13">
-                                <label class="check-label" for="subcategory13"> &nbsp; xfzxdsfg </label>
+                            <li>
+                                <input type="checkbox" id="subcategory12">
+                                <label class="check-label" for="subcategory12"> &nbsp; xfzxdsfg </label>
                             </li>
                         </ul>
                     </div> <!--end of domestic -->
                     <div class="jobcateg" id="food">
                         <label class="categ-title"> &nbsp; Food / Restaurant</label>
                         <ul>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory14">
-                                <label class="check-label" for="subcategory14"> &nbsp; xfzxdsfg </label>
+                            <li>
+                                <input type="checkbox" id="subcategory13">
+                                <label class="check-label" for="subcategory13"> &nbsp; xfzxdsfg </label>
                             </li>
                         </ul>
                     </div> <!--end of food -->
                     <div class="jobcateg" id="medical">
                         <label class="categ-title"> &nbsp; Health / Medical / Science </label>
                         <ul>
-                            <li onclick="check(this)">
+                            <li>
+                                <input type="checkbox" id="subcategory14">
+                                <label class="check-label" for="subcategory14"> &nbsp; Laboratory </label>
+                            </li>
+                            <li>
                                 <input type="checkbox" id="subcategory15">
-                                <label class="check-label" for="subcategory15"> &nbsp; Laboratory </label>
+                                <label class="check-label" for="subcategory15"> &nbsp; Med Tech </label>
                             </li>
-                            <li onclick="check(this)">
+                            <li>
                                 <input type="checkbox" id="subcategory16">
-                                <label class="check-label" for="subcategory16"> &nbsp; Med Tech </label>
+                                <label class="check-label" for="subcategory16"> &nbsp; More Tech </label>
                             </li>
-                            <li onclick="check(this)">
+                            <li>
                                 <input type="checkbox" id="subcategory17">
-                                <label class="check-label" for="subcategory17"> &nbsp; More Tech </label>
+                                <label class="check-label" for="subcategory17"> &nbsp; Nurse / Midwife </label>
                             </li>
-                            <li onclick="check(this)">
+                            <li>
                                 <input type="checkbox" id="subcategory18">
-                                <label class="check-label" for="subcategory18"> &nbsp; Nurse / Midwife </label>
+                                <label class="check-label" for="subcategory18"> &nbsp; Pharmacist </label>
                             </li>
-                            <li onclick="check(this)">
+                            <li>
                                 <input type="checkbox" id="subcategory19">
-                                <label class="check-label" for="subcategory19"> &nbsp; Pharmacist </label>
+                                <label class="check-label" for="subcategory19"> &nbsp; PT / OT </label>
                             </li>
-                            <li onclick="check(this)">
+                            <li>
                                 <input type="checkbox" id="subcategory20">
-                                <label class="check-label" for="subcategory20"> &nbsp; PT / OT </label>
+                                <label class="check-label" for="subcategory20"> &nbsp; Rad Tech </label>
                             </li>
-                            <li onclick="check(this)">
+                            <li>
                                 <input type="checkbox" id="subcategory21">
-                                <label class="check-label" for="subcategory21"> &nbsp; Rad Tech </label>
+                                <label class="check-label" for="subcategory21"> &nbsp; Sales </label>
                             </li>
-                            <li onclick="check(this)">
+                            <li>
                                 <input type="checkbox" id="subcategory22">
-                                <label class="check-label" for="subcategory22"> &nbsp; Sales </label>
+                                <label class="check-label" for="subcategory22"> &nbsp; Transcriptionist </label>
                             </li>
-                            <li onclick="check(this)">
+                            <li>
                                 <input type="checkbox" id="subcategory23">
-                                <label class="check-label" for="subcategory23"> &nbsp; Transcriptionist </label>
-                            </li>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory24">
-                                <label class="check-label" for="subcategory24"> &nbsp; Veterinarian </label>
+                                <label class="check-label" for="subcategory23"> &nbsp; Veterinarian </label>
                             </li>
                         </ul>
                     </div> <!--end of medical-->
                     <div class="jobcateg" id="intern">
                         <label class="categ-title"> &nbsp; Internship </label>
                         <ul>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory25">
-                                <label class="check-label" for="subcategory25"> &nbsp; IT </label>
+                            <li>
+                                <input type="checkbox" id="subcategory24">
+                                <label class="check-label" for="subcategory24"> &nbsp; IT </label>
                             </li>
                         </ul>
                     </div> <!--end of Intern-->
                     <div class="jobcateg" id="logistics">
                         <label class="categ-title"> &nbsp; Logistics / Warehousing </label>
                         <ul>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory26">
-                                <label class="check-label" for="subcategory26"> &nbsp; shdsfh </label>
+                            <li>
+                                <input type="checkbox" id="subcategory25">
+                                <label class="check-label" for="subcategory25"> &nbsp; shdsfh </label>
                             </li>
                         </ul>
                     </div> <!--end of logistics-->
                     <div class="jobcateg" id="purchasing">
                         <label class="categ-title"> &nbsp; Purchasing / Buyer </label>
                         <ul>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory27">
-                                <label class="check-label" for="subcategory27"> &nbsp; ggjgu </label>
+                            <li>
+                                <input type="checkbox" id="subcategory26">
+                                <label class="check-label" for="subcategory26"> &nbsp; ggjgu </label>
                             </li>
                         </ul>
                     </div> <!--end of purchasing-->
                     <div class="jobcateg" id="sports">
                         <label class="categ-title"> &nbsp; Sports / Athletics </label>
                         <ul>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory28">
-                                <label class="check-label" for="subcategory28"> &nbsp; Coach </label>
+                            <li>
+                                <input type="checkbox" id="subcategory27">
+                                <label class="check-label" for="subcategory27"> &nbsp; Coach </label>
                             </li>
                         </ul>
                     </div> <!--end of sports-->
@@ -198,140 +198,140 @@
                     <div class="jobcateg" id="admin">
                         <label class="categ-title"> &nbsp; Admin / Office / Clerical </label>
                             <ul>
-                                <li onclick="check(this)">
+                                <li>
+                                    <input type="checkbox" id="subcategory28">
+                                    <label class="check-label" for="subcategory28"> &nbsp; Operations </label>
+                                </li>
+                                <li>
                                     <input type="checkbox" id="subcategory29">
-                                    <label class="check-label" for="subcategory29"> &nbsp; Operations </label>
+                                    <label class="check-label" for="subcategory29"> &nbsp; Secretary / Receptionist </label>
                                 </li>
-                                <li onclick="check(this)">
+                                <li class="active-check">
                                     <input type="checkbox" id="subcategory30">
-                                    <label class="check-label" for="subcategory30"> &nbsp; Secretary / Receptionist </label>
-                                </li>
-                                <li onclick="check(this)" class="active-check">
-                                    <input type="checkbox" id="subcategory31">
-                                    <label class="check-label" for="subcategory31"> &nbsp; Virtual / Home-based </label>
+                                    <label class="check-label" for="subcategory30"> &nbsp; Virtual / Home-based </label>
                                 </li>
                             </ul>
                     </div>  <!--end of admin-->
                     <div class="jobcateg" id="arts">
                         <label class="categ-title"> &nbsp; Arts / Media / Design </label>
                             <ul>
-                                <li onclick="check(this)">
+                                <li>
+                                    <input type="checkbox" id="subcategory31">
+                                    <label class="check-label" for="subcategory31"> &nbsp; Interior Design </label>
+                                </li>
+                                <li>
                                     <input type="checkbox" id="subcategory32">
-                                    <label class="check-label" for="subcategory32"> &nbsp; Interior Design </label>
+                                    <label class="check-label" for="subcategory32"> &nbsp; Radio / Music </label>
                                 </li>
-                                <li onclick="check(this)">
+                                <li>
                                     <input type="checkbox" id="subcategory33">
-                                    <label class="check-label" for="subcategory33"> &nbsp; Radio / Music </label>
+                                    <label class="check-label" for="subcategory33"> &nbsp; Video / TV </label>
                                 </li>
-                                <li onclick="check(this)">
+                                <li>
                                     <input type="checkbox" id="subcategory34">
-                                    <label class="check-label" for="subcategory34"> &nbsp; Video / TV </label>
+                                    <label class="check-label" for="subcategory34"> &nbsp; Virtual / Home-based </label>
                                 </li>
-                                <li onclick="check(this)">
+                                <li>
                                     <input type="checkbox" id="subcategory35">
-                                    <label class="check-label" for="subcategory35"> &nbsp; Virtual / Home-based </label>
-                                </li>
-                                <li onclick="check(this)">
-                                    <input type="checkbox" id="subcategory36">
-                                    <label class="check-label" for="subcategory36"> &nbsp; Writers </label>
+                                    <label class="check-label" for="subcategory35"> &nbsp; Writers </label>
                                 </li>
                             </ul>
                     </div> <!--end of arts-->
                     <div class="jobcateg" id="education">
                         <label class="categ-title"> &nbsp; Education / Schools </label>
                         <ul>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory37">
-                                <label class="check-label" for="subcategory37"> &nbsp; Teacher </label>
+                            <li>
+                                <input type="checkbox" id="subcategory36">
+                                <label class="check-label" for="subcategory36"> &nbsp; Teacher </label>
                             </li>
                         </ul>
                     </div> <!--end of education-->
                     <div class="jobcateg" id="foreign">
                         <label class="categ-title"> &nbsp; Foreign Language </label>
                         <ul>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory24">
-                                <label class="check-label" for="subcategory24"> &nbsp; Veterinarian </label>
+                            <li>
+                                <input type="checkbox" id="subcategory37">
+                                <label class="check-label" for="subcategory37"> &nbsp; Veterinarian </label>
                             </li>
                         </ul>
                     </div> <!--end of foreign-->
                     <div class="jobcateg" id="spa">
                         <label class="categ-title"> &nbsp; Hotel / Spa / Salon </label>
                             <ul>
-                                <li onclick="check(this)">
+                                <li>
+                                    <input type="checkbox" id="subcategory38">
+                                    <label class="check-label" for="subcategory38"> &nbsp; Hotel / Resort </label>
+                                </li>
+                                <li>
                                     <input type="checkbox" id="subcategory39">
-                                    <label class="check-label" for="subcategory39"> &nbsp; Hotel / Resort </label>
+                                    <label class="check-label" for="subcategory39"> &nbsp; Salon </label>
                                 </li>
-                                <li onclick="check(this)">
+                                <li>
                                     <input type="checkbox" id="subcategory40">
-                                    <label class="check-label" for="subcategory40"> &nbsp; Salon </label>
-                                </li>
-                                <li onclick="check(this)">
-                                    <input type="checkbox" id="subcategory41">
-                                    <label class="check-label" for="subcategory41"> &nbsp; Spa </label>
+                                    <label class="check-label" for="subcategory40"> &nbsp; Spa </label>
                                 </li>
                             </ul>
                     </div> <!--end of spa-->
                     <div class="jobcateg" id="it">
                         <label class="categ-title"> &nbsp; IT / Computers </label>
                             <ul>
-                                <li onclick="check(this)">
+                                <li>
+                                    <input type="checkbox" id="subcategory41">
+                                    <label class="check-label" for="subcategory41"> &nbsp; mobile Development </label>
+                                </li>
+                                <li>
                                     <input type="checkbox" id="subcategory42">
-                                    <label class="check-label" for="subcategory42"> &nbsp; mobile Development </label>
+                                    <label class="check-label" for="subcategory42"> &nbsp; Network / System Administrator </label>
                                 </li>
-                                <li onclick="check(this)">
+                                <li>
                                     <input type="checkbox" id="subcategory43">
-                                    <label class="check-label" for="subcategory43"> &nbsp; Network / System Administrator </label>
+                                    <label class="check-label" for="subcategory43"> &nbsp; Operations / HR </label>
                                 </li>
-                                <li onclick="check(this)">
+                                <li>
                                     <input type="checkbox" id="subcategory44">
-                                    <label class="check-label" for="subcategory44"> &nbsp; Operations / HR </label>
+                                    <label class="check-label" for="subcategory44"> &nbsp; Programming / Development </label>
                                 </li>
-                                <li onclick="check(this)">
+                                <li>
                                     <input type="checkbox" id="subcategory45">
-                                    <label class="check-label" for="subcategory45"> &nbsp; Programming / Development </label>
+                                    <label class="check-label" for="subcategory45"> &nbsp; QA / Testing </label>
                                 </li>
-                                <li onclick="check(this)">
+                                <li>
                                     <input type="checkbox" id="subcategory46">
-                                    <label class="check-label" for="subcategory46"> &nbsp; QA / Testing </label>
+                                    <label class="check-label" for="subcategory46"> &nbsp; Sales </label>
                                 </li>
-                                <li onclick="check(this)">
+                                <li>
                                     <input type="checkbox" id="subcategory47">
-                                    <label class="check-label" for="subcategory47"> &nbsp; Sales </label>
+                                    <label class="check-label" for="subcategory47"> &nbsp; SEO / Online Marketing </label>
                                 </li>
-                                <li onclick="check(this)">
+                                <li>
                                     <input type="checkbox" id="subcategory48">
-                                    <label class="check-label" for="subcategory48"> &nbsp; SEO / Online Marketing </label>
+                                    <label class="check-label" for="subcategory48"> &nbsp; Technical Support </label>
                                 </li>
-                                <li onclick="check(this)">
+                                <li>
                                     <input type="checkbox" id="subcategory49">
-                                    <label class="check-label" for="subcategory49"> &nbsp; Technical Support </label>
+                                    <label class="check-label" for="subcategory49"> &nbsp; Technician </label>
                                 </li>
-                                <li onclick="check(this)">
+                                <li>
                                     <input type="checkbox" id="subcategory50">
-                                    <label class="check-label" for="subcategory50"> &nbsp; Technician </label>
-                                </li>
-                                <li onclick="check(this)">
-                                    <input type="checkbox" id="subcategory51">
-                                    <label class="check-label" for="subcategory51"> &nbsp; Virtual / Home-based </label>
+                                    <label class="check-label" for="subcategory50"> &nbsp; Virtual / Home-based </label>
                                 </li>
                             </ul>
                     </div> <!--end of it-->
                     <div class="jobcateg" id="maritime">
                         <label class="categ-title"> &nbsp; Maritime / Seabased </label>
                             <ul>
-                                <li onclick="check(this)">
-                                    <input type="checkbox" id="subcategory52">
-                                    <label class="check-label" for="subcategory52"> &nbsp; Seaman </label>
+                                <li>
+                                    <input type="checkbox" id="subcategory51">
+                                    <label class="check-label" for="subcategory51"> &nbsp; Seaman </label>
                                 </li>
                             </ul>
                     </div> <!--end of maritime-->
                     <div class="jobcateg" id="sales">
                         <label class="categ-title"> &nbsp; Sales / Marketing / Retail </label>
                             <ul>
-                                <li onclick="check(this)">
-                                    <input type="checkbox" id="subcategory53">
-                                    <label class="check-label" for="subcategory53"> &nbsp; Sales Lady </label>
+                                <li>
+                                    <input type="checkbox" id="subcategory52">
+                                    <label class="check-label" for="subcategory52"> &nbsp; Sales Lady </label>
                                 </li>
                             </ul>
                     </div> <!--end of sales-->
@@ -343,116 +343,116 @@
                     <div class="jobcateg" id="agriculture">
                         <label class="categ-title"> &nbsp; Agriculture / Veterinary</label>
                             <ul>
-                                <li onclick="check(this)">
-                                    <input type="checkbox" id="subcategory33">
-                                    <label class="check-label" for="subcategory33"> &nbsp; hfghfgh </label>
+                                <li>
+                                    <input type="checkbox" id="subcategory53">
+                                    <label class="check-label" for="subcategory53"> &nbsp; hfghfgh </label>
                                 </li>
                             </ul>
                     </div>
                     <div class="jobcateg" id="callcenter">
                         <label class="categ-title"> &nbsp; Call Center / BPO </label>
                             <ul>
-                                <li onclick="check(this)">
-                                    <input type="checkbox" id="subcategory34">
-                                    <label class="check-label" for="subcategory34"> &nbsp; njghghj </label>
+                                <li>
+                                    <input type="checkbox" id="subcategory54">
+                                    <label class="check-label" for="subcategory54"> &nbsp; njghghj </label>
                                 </li>
                             </ul>
                     </div>
                     <div class="jobcateg" id="engineering">
                         <label class="categ-title"> &nbsp; Engineering / Architecture </label>
                         <ul>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory35">
-                                <label class="check-label" for="subcategory35"> &nbsp; Chemical Engineering </label>
+                            <li>
+                                <input type="checkbox" id="subcategory55">
+                                <label class="check-label" for="subcategory55"> &nbsp; Chemical Engineering </label>
                             </li>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory36">
-                                <label class="check-label" for="subcategory30"> &nbsp; Civil Engineering </label>
+                            <li>
+                                <input type="checkbox" id="subcategory56">
+                                <label class="check-label" for="subcategory56"> &nbsp; Civil Engineering </label>
                             </li>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory37">
-                                <label class="check-label" for="subcategory37"> &nbsp; ECE </label>
+                            <li>
+                                <input type="checkbox" id="subcategory57">
+                                <label class="check-label" for="subcategory57"> &nbsp; ECE </label>
                             </li>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory38">
-                                <label class="check-label" for="subcategory38"> &nbsp; Electrical Engineering </label>
+                            <li>
+                                <input type="checkbox" id="subcategory58">
+                                <label class="check-label" for="subcategory58"> &nbsp; Electrical Engineering </label>
                             </li>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory39">
-                                <label class="check-label" for="subcategory39"> &nbsp; Industrial Engineering </label>
+                            <li>
+                                <input type="checkbox" id="subcategory59">
+                                <label class="check-label" for="subcategory59"> &nbsp; Industrial Engineering </label>
                             </li>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory40">
-                                <label class="check-label" for="subcategory40"> &nbsp; Interior Design </label>
+                            <li>
+                                <input type="checkbox" id="subcategory60">
+                                <label class="check-label" for="subcategory60"> &nbsp; Interior Design </label>
                             </li>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory41">
-                                <label class="check-label" for="subcategory41"> &nbsp; Maritime </label>
+                            <li>
+                                <input type="checkbox" id="subcategory61">
+                                <label class="check-label" for="subcategory61"> &nbsp; Maritime </label>
                             </li>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory42">
-                                <label class="check-label" for="subcategory42"> &nbsp; Mechanical Engineering </label>
+                            <li>
+                                <input type="checkbox" id="subcategory62">
+                                <label class="check-label" for="subcategory62"> &nbsp; Mechanical Engineering </label>
                             </li>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory43">
-                                <label class="check-label" for="subcategory43"> &nbsp; QA / QC </label>
+                            <li>
+                                <input type="checkbox" id="subcategory63">
+                                <label class="check-label" for="subcategory63"> &nbsp; QA / QC </label>
                             </li>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory44">
-                                <label class="check-label" for="subcategory44"> &nbsp; Safety </label>
+                            <li>
+                                <input type="checkbox" id="subcategory64">
+                                <label class="check-label" for="subcategory64"> &nbsp; Safety </label>
                             </li>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory45">
-                                <label class="check-label" for="subcategory45"> &nbsp; Sales Engineering </label>
+                            <li>
+                                <input type="checkbox" id="subcategory65">
+                                <label class="check-label" for="subcategory65"> &nbsp; Sales Engineering </label>
                             </li>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory46">
-                                <label class="check-label" for="subcategory46"> &nbsp; Virtual / Home-based </label>
+                            <li>
+                                <input type="checkbox" id="subcategory66">
+                                <label class="check-label" for="subcategory66"> &nbsp; Virtual / Home-based </label>
                             </li>
                         </ul>
                     </div>
                     <div class="jobcateg" id="government">
                         <label class="categ-title"> &nbsp; Government / Non-profit </label>
                         <ul>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory47">
-                                <label class="check-label" for="subcategory47"> &nbsp; Auditor </label>
+                            <li>
+                                <input type="checkbox" id="subcategory67">
+                                <label class="check-label" for="subcategory67"> &nbsp; Auditor </label>
                             </li>
                         </ul>
                     </div>
                     <div class="jobcateg" id="hr-rec-training">
                         <label class="categ-title"> &nbsp; HR / Recruitment / Training</label>
                             <ul>
-                                <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory48">
-                                <label class="check-label" for="subcategory48"> &nbsp; asdfrdsry </label>
+                                <li>
+                                <input type="checkbox" id="subcategory68">
+                                <label class="check-label" for="subcategory68"> &nbsp; asdfrdsry </label>
                             </li>
                             </ul>
                     </div>
                     <div class="jobcateg" id="legal-doc">
                         <label class="categ-title"> &nbsp; Legal / Documentation </label>
                         <ul>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory49">
-                                <label class="check-label" for="subcategory49"> &nbsp; gfdfujty </label>
+                            <li>
+                                <input type="checkbox" id="subcategory69">
+                                <label class="check-label" for="subcategory69"> &nbsp; gfdfujty </label>
                             </li>
                         </ul>
                     </div>
                     <div class="jobcateg" id="prod-manufacturing">
                         <label class="categ-title"> &nbsp; Production / Manufacturing </label>
                         <ul>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory50">
-                                <label class="check-label" for="subcategory50"> &nbsp; dfgdfyh </label>
+                            <li>
+                                <input type="checkbox" id="subcategory70">
+                                <label class="check-label" for="subcategory70"> &nbsp; dfgdfyh </label>
                             </li>
                         </ul>
                     </div>
                     <div class="jobcateg" id="skill-tech">
                         <label class="categ-title"> &nbsp; Skilled Work / Technical </label>
                         <ul>
-                            <li onclick="check(this)">
-                                <input type="checkbox" id="subcategory51">
-                                <label class="check-label" for="subcategory51"> &nbsp; gjhfg </label>
+                            <li>
+                                <input type="checkbox" id="subcategory71">
+                                <label class="check-label" for="subcategory71"> &nbsp; gjhfg </label>
                             </li>
                         </ul>
                     </div>
