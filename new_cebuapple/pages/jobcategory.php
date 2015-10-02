@@ -38,8 +38,8 @@
         </div>
         <div class="row">
             <div class="container">
-                <!--Left-->
-                <div class="col-lg-4 col-md-4 col-sm-4"> 
+                
+<!--Left-->     <div class="col-lg-4 col-md-4 col-sm-4"> 
                     <div class="jobcateg" id="accounting">
                         <label class="categ-title"> &nbsp; Accounting / Finance</label>
                         <ul>
@@ -195,8 +195,8 @@
                     </div> <!--end of sports-->
                 </div> <!--end of Left-->
 
-                <!--Center-->
-                <div class="col-lg-4 col-md-4 col-sm-4">
+                
+<!--Center-->   <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="jobcateg" id="admin">
                         <label class="categ-title"> &nbsp; Admin / Office / Clerical </label>
                             <ul>
@@ -339,8 +339,8 @@
                     </div> <!--end of sales-->
                 </div> <!--end of Center-->
 
-                <!-- Right -->
-                <div class="col-lg-4 col-md-4 col-sm-4">
+                
+<!-- Right -->  <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="jobcateg" id="agriculture">
                         <label class="categ-title"> &nbsp; Agriculture / Veterinary</label>
                             <ul>
@@ -461,7 +461,7 @@
             </div> <!-- container -->
         </div> <!-- End of Row -->
     </div> <!-- cl-mcont -->
-</div> <!-- fluid container -->
+</div> <!-- container-fluid -->
 
 
 <script type="text/javascript">
