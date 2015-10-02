@@ -27,7 +27,7 @@
 <div id="pcont" class="container-fluid ">
     <div class="cl-mcont">
         <div class="row">
-            <div class="col-md-12 headline">
+            <div class="col-lg-12 headline">
                 <h2><span class="navbar-brand save-header">Job Categories</span>
                     <span style="float: right;"> <input type="button" value="Update Categories" id="update-category" class="btn btn-danger"> </span>
                 </h2>
@@ -36,7 +36,7 @@
         </div>
         <div class="row">
             <div class="container">
-                <div class="col-lg-4"> <!--left-->
+                <div class="col-lg-4 col-md-4 col-sm-4"> <!--left-->
                     <div class="jobcateg" id="accounting">
                         <label class="categ-title"> &nbsp; Accounting / Finance</label>
                         <ul>
@@ -194,7 +194,7 @@
 
                 <!--Center-->
 
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="jobcateg" id="admin">
                         <label class="categ-title"> &nbsp; Admin / Office / Clerical </label>
                             <ul>
@@ -339,7 +339,7 @@
 
                 <!-- right -->
 
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="jobcateg" id="agriculture">
                         <label class="categ-title"> &nbsp; Agriculture / Veterinary</label>
                             <ul>
@@ -458,8 +458,6 @@
                     </div>
                 </div>
             </div> <!--end of right-->
-
-            </div> <!-- End of Container -->
         </div> <!-- End of Row -->
     </div> <!-- cl-mcont -->
 </div> <!-- fluid container -->

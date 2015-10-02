@@ -119,7 +119,6 @@
 
     <div class="cl-mcont">
 		<div class="row">
-
 			<div id="heading" class="col-md-12 headline animated slideInDown">
 				<h2>Lorenz Calang</h2>
 				<p>Front-end Developer. Java Programmer. C Programmer.</p>
