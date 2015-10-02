@@ -338,7 +338,7 @@
                 </div> <!--end of center-->
 
                 <!-- right -->
-
+                                    
                 <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="jobcateg" id="agriculture">
                         <label class="categ-title"> &nbsp; Agriculture / Veterinary</label>
