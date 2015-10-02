@@ -25,10 +25,12 @@
     }
 </style>
 <div id="pcont" class="container-fluid ">
+    <!-- <div class="container"> -->
     <div class="cl-mcont">
         <div class="row">
             <div class="col-lg-12 headline">
-                <h2><span class="navbar-brand save-header">Job Categories</span>
+                <h2>
+                    <span class="navbar-brand save-header">Job Categories</span>
                     <span style="float: right;"> <input type="button" value="Update Categories" id="update-category" class="btn btn-danger"> </span>
                 </h2>
             </div> <!--end of col-md-12 headline-->
